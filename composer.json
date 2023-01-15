@@ -1,0 +1,36 @@
+{
+  "name": "digitickets/omnipay-dojo-checkout",
+  "type": "library",
+  "description": "Payment Gateway driver for Dojo (Checkout)",
+  "keywords": [
+    "Dojo",
+    "Checkout",
+    "gateway",
+    "merchant",
+    "omnipay",
+    "pay",
+    "payment"
+  ],
+  "homepage": "https://github.com/digitickets/omnipay-dojo-checkout",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "DigiTickets\\Dojo\\": "src",
+      "DigiTickets\\DojoTests\\": "tests"
+    }
+  },
+  "require": {
+    "omnipay/common": "~2.0",
+    "php": "^7",
+    "symfony/event-dispatcher": "^2.8"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.0",
+    "mockery/mockery": "~0.8",
+    "omnipay/tests": "~2.0"
+  },
+  "scripts": {
+    "run-fixer": "vendor/bin/php-cs-fixer fix .",
+    "run-tests": "vendor/bin/phpunit"
+  }
+}
